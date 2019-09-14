@@ -1,0 +1,14 @@
+{{>partial_header}}
+{-|
+Module : {{baseModule}}
+-}
+
+module {{baseModule}}
+  ( {{^x-allowNonUniqueOperationIds}} module {{baseModule}}.API
+  ,{{/x-allowNonUniqueOperationIds}} module {{baseModule}}.Model{{#generateLenses}}
+  , module {{baseModule}}.ModelLens{{/generateLenses}}
+  ) where
+
+{{^x-allowNonUniqueOperationIds}}import {{baseModule}}.API{{/x-allowNonUniqueOperationIds}}
+import {{baseModule}}.Model{{#generateLenses}}
+import {{baseModule}}.ModelLens{{/generateLenses}}
