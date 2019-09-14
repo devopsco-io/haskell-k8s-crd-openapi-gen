@@ -7,7 +7,7 @@ for kubernetes CRDs objects.
 
 ## Motivation
 Currently, there is a kubernetes client generated from the openapi scpecification of kubernetes,
-which can be found (here)[https://github.com/kubernetes-client/haskell]. This API is good for access
+which can be found [here](https://github.com/kubernetes-client/haskell). This API is good for access
 the core objects that kubernetes support. It also contains some methods to access Custom Objects, but 
 the Custom Object API uses generic JSON objects, avoiding to use compilation type checking.
 
@@ -19,7 +19,7 @@ from Haskell Kubernetes Client API.
 
 ## Usage
 First, this scripts needs a OpenAPI definition for the CRDs, in order to generate a OpenAPI definition from CRD look at
-the helpers in (this)[https://github.com/devopsco-io/crd2openapi].
+the helpers in [this](https://github.com/devopsco-io/crd2openapi).
 
 **Command Line Options:**
 ```
